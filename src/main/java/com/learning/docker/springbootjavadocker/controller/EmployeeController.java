@@ -18,18 +18,16 @@ public class EmployeeController {
     public static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
 
     @GetMapping("/employee/{empId}")
-    public ResponseEntity<Employee> getEmployee(@PathVariable("empId") final String empId){
+    public ResponseEntity<Object> get(@PathVariable("empId") final String empId){
         LOGGER.info("Trying to retrieve Employee with Id {}", empId);
 
-        Map<String, Employee> employeeList = getAllEmployees();
-        Employee employee = employeeList.get(empId);
+        Employee employee = getEmployee(empId);
 
-        ResponseEntity<Employee> responseEntity = new ResponseEntity<>(employee, HttpStatus.OK);
+        ResponseEntity<Object> responseEntity = new ResponseEntity<>(employee, HttpStatus.OK);;
         return responseEntity;
     }
 
-
-    public Map<String, Employee> getAllEmployees() {
+    public Employee getEmployee(final String empId) {
         Employee employee1 = new Employee("001", "Mahesh Babu Neeli");
         Employee employee2 = new Employee("002", "Gopi Molabanti");
         Employee employee3 = new Employee("003", "Balu Aggala");
@@ -41,7 +39,12 @@ public class EmployeeController {
         employeeList.put("003", employee3);
         employeeList.put("004", employee4);
 
-        return employeeList;
+        Employee employee = employeeList.get(empId);
+        if (null != employee) {
+            return employee;
+        } else {
+             return new Employee(empId, "Employee Not Found");
+        }
     }
 
 
