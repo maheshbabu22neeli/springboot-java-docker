@@ -10,6 +10,8 @@
 
 Step 1: Create the Docker Image
     $ docker build -f Dockerfile -t springboot-java-docker .
+          or 
+    $ docker build .
     
 Step 2 : Check whether the Docker Image Created or Not.
     $ docker images
@@ -17,8 +19,6 @@ Step 2 : Check whether the Docker Image Created or Not.
 Step 3: Run Docker Image by specifying port (might be different or same, your wish)
     $ docker run -p 8085:8082 springboot-java-docker
 
-
-    
 ````
 ##### Two : Run with bash file (docker-build.sh)
 ```$xslt
