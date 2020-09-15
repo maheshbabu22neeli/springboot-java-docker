@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<artifactId>springboot-java-docker</artifactId>
-	<name>springboot-java-docker</name>
-	<version>0.0.3</version>
-	<groupId>com.learning.docker</groupId>
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>springboot-java-docker</artifactId>
+    <name>springboot-java-docker</name>
+    <version>0.0.3-SNAPSHOT</version>
+    <groupId>com.learning.docker</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
-	<description>Sample project Springboot, java, docker</description>
+    <description>Sample project Springboot, java, docker</description>
 
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
-	<scm>
-		<url>https://github.com/maheshbabu22neeli/springboot-java-docker.git</url>
-		<connection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</connection>
-		<!--<developerConnection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</developerConnection>-->
-		<tag>springboot-java-docker-0.0.3</tag>
-	</scm>
+    <scm>
+        <url>https://github.com/maheshbabu22neeli/springboot-java-docker</url>
+        <connection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</connection>
+        <tag>springboot-java-docker-0.0.3</tag>
+    </scm>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-					<localCheckout>true</localCheckout>
-				</configuration>
-				<!--<configuration>
-					<tag>v${releaseVersion}</tag>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					&lt;!&ndash; releaseProfiles configuration will actually force a Maven profile
-						– the `releases` profile – to become active during the Release process. &ndash;&gt;
-					<releaseProfiles>releases</releaseProfiles>
-				</configuration>-->
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-scm-plugin</artifactId>
-						<version>1.8.1</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-		</plugins>
-		<finalName>springboot-java-docker</finalName>
-	</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                </configuration>
+                <!--<configuration>
+                    <tag>v${releaseVersion}</tag>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    &lt;!&ndash; releaseProfiles configuration will actually force a Maven profile
+                        – the `releases` profile – to become active during the Release process. &ndash;&gt;
+                    <releaseProfiles>releases</releaseProfiles>
+                </configuration>-->
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>1.8.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+        <finalName>springboot-java-docker</finalName>
+    </build>
 
 </project>
