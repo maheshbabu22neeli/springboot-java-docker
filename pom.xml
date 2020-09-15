@@ -19,9 +19,9 @@
     </properties>
 
     <scm>
-        <url>https://github.com/maheshbabu22neeli/springboot-java-docker</url>
         <connection>scm:git:git@github.com:maheshbabu22neeli/springboot-java-docker.git</connection>
-        <tag>springboot-java-docker-0.0.4</tag>
+        <developerConnection>scm:git:ssh://git@github.com:maheshbabu22neeli/springboot-java-docker.git</developerConnection>
+        <url>https://github.com/maheshbabu22neeli/springboot-java-docker.git</url>
     </scm>
 
     <dependencies>
