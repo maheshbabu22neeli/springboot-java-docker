@@ -56,15 +56,11 @@
                 <version>2.5.3</version>
                 <configuration>
                     <localCheckout>true</localCheckout>
-                </configuration>
-                <!--<configuration>
                     <tag>v${releaseVersion}</tag>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
-                    &lt;!&ndash; releaseProfiles configuration will actually force a Maven profile
-                        – the `releases` profile – to become active during the Release process. &ndash;&gt;
                     <releaseProfiles>releases</releaseProfiles>
-                </configuration>-->
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.plugins</groupId>
