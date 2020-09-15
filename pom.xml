@@ -21,7 +21,7 @@
 	<scm>
 		<url>https://github.com/maheshbabu22neeli/springboot-java-docker.git</url>
 		<connection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</connection>
-		<developerConnection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</developerConnection>
+		<!--<developerConnection>scm:git@github.com:maheshbabu22neeli/springboot-java-docker.git</developerConnection>-->
 		<tag>HEAD</tag>
 	</scm>
 
