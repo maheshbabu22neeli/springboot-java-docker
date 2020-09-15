@@ -58,7 +58,6 @@
                     <localCheckout>true</localCheckout>
                     <preparationGoals>clean verify</preparationGoals>
                     <tagNameFormat>@{project.name}-@{project.version}</tagNameFormat>
-                    <tag>@{project.version}</tag>
                     <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
                     <!--<releaseProfiles>releases</releaseProfiles>-->
                 </configuration>
