@@ -56,10 +56,10 @@
                 <version>2.5.3</version>
                 <configuration>
                     <localCheckout>true</localCheckout>
-                    <tag>v${releaseVersion}</tag>
-                    <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <releaseProfiles>releases</releaseProfiles>
+                    <preparationGoals>clean verify</preparationGoals>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
+                    <!--<releaseProfiles>releases</releaseProfiles>-->
                 </configuration>
                 <dependencies>
                     <dependency>
