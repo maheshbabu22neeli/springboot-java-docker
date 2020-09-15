@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>springboot-java-docker</artifactId>
     <name>springboot-java-docker</name>
-    <version>0.0.4</version>
+    <version>0.0.4-SNAPSHOT</version>
     <groupId>com.learning.docker</groupId>
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -19,8 +19,8 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@github.com:maheshbabu22neeli/springboot-java-docker.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:maheshbabu22neeli/springboot-java-docker.git</developerConnection>
+        <connection>scm:git:https://github.com/maheshbabu22neeli/springboot-java-docker.git</connection>
+        <developerConnection>scm:git:https://github.com/maheshbabu22neeli/springboot-java-docker.git</developerConnection>
         <url>https://github.com/maheshbabu22neeli/springboot-java-docker.git</url>
       <tag>springboot-java-docker-0.0.4</tag>
   </scm>
